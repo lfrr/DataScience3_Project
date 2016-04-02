@@ -100,5 +100,5 @@ tidydata <- ddply(data, c("SubjectID", "Activity"), function(x){colMeans(x[, 3:6
 tidydata %>% tbl_df() %>% View()
 setwd("../")
 ?write.table
-write.table(tidydata, file = "tidydata.txt", sep = " ", quote = FALSE, row.names = FALSE)
+write.table(tidydata, file = "tidydata.txt", row.names = FALSE)
 
